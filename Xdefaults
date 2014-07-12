@@ -1,0 +1,69 @@
+Xcursor.theme:    Vanilla-DMZ-AA
+
+!urxvt color scheme:
+
+URxvt*background: #2B2B2B
+URxvt*foreground: #DEDEDE
+URxvt*colorUL: #86a2b0
+
+!Black
+URxvt*color0:  #282a2b
+URxvt*color8:  #2c2f30
+
+!Red
+URxvt*color1:  #ac357e
+URxvt*color9:  #df45a4
+
+!Green
+URxvt*color2:  #65ac35
+URxvt*color10: #83df45
+
+!Yellow
+URxvt*color3:  #a8ac35
+URxvt*color11: #dadf45
+
+!Blue
+URxvt*color4:  #273a87
+URxvt*color12: #3955c4
+
+!Magenta
+URxvt*color5:  #666699
+URxvt*color13: #8888cc
+
+!Cyan
+URxvt*color6:  #8caff0
+URxvt*color14: #9bbaf1
+
+!White
+URxvt*color7:  #a8a8a8
+URxvt*color15: #f0f0f0
+URxvt.font:xft:dina:regular:pixelsize=15
+URxvt.boldFont:xft:dina:regular:pixelsize=15
+
+
+!urxvt extensions:
+
+URxvt.perl-ext-common:  default,matcher,tabbedex
+
+!enabling clickable links:
+
+URxvt.urlLauncher:      /usr/bin/firefox
+URxvt.matcher.button:   1 
+
+!urxvt scrolling options and cursor style:
+
+URxvt*saveLines: 12000
+URxvt*scrollstyle:plain
+URxvt*scrollBar: false
+URxvt*cursorBlink: true
+URxvt*cursorUnderline: true
+
+! urxvt tabs settings:
+
+URxvt.tabbed.tabbar-fg: 2
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 2
+URxvt.tabbed.tab-bg: 8
+URxvt.tabbed.autohide:  yes
+URxvt.tabbed.new-button:  no
+URxvt.tabbed.title: no

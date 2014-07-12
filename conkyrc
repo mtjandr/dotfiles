@@ -1,0 +1,12 @@
+#Conky Config File
+background no
+out_to_x no
+out_to_console yes
+update_interval 3
+total_run_times 0
+use_spacer none
+
+TEXT
+$if_mpd_playing ^fg(\#ff00ff)${mpd_smart}^fg()$endif  \
+^fg(\#7CFC00)||^fg()  \
+^fg(\#ffffff)${time %b %d %H:%M}^fg() 

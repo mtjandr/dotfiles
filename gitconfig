@@ -1,0 +1,11 @@
+[user]
+	name = Miles Tjandrawidjaja
+	email = tjandrma@mcmaster.ca
+[merge]
+	conflictstyle = diff3
+[core]
+	editor = vim
+[color]
+	ui = true
+[push]
+	default = current

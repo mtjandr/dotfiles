@@ -5,10 +5,6 @@ alias grep='grep --color=auto'
 alias background='feh --bg-scale'
 alias mplayerx='mplayer -heartbeat-cmd "xscreensaver-command -deactivate"'
 
-# Bindings to have smart history search
-bind '"\e[A": history-search-backward'
-bind '"\e[B": history-search-forward'
-
 # Allow auto-completion when using sudo or man
 complete -cf sudo
 complete -cf man

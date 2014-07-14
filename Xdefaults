@@ -24,7 +24,7 @@ URxvt*color11: #dadf45
 
 !Blue
 URxvt*color4:  #273a87
-URxvt*color12: #3955c4
+URxvt*color12: #0066FF
 
 !Magenta
 URxvt*color5:  #666699

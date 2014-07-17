@@ -41,11 +41,11 @@ bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+# Music controls
+bindsym $mod+Left exec --no-startup-id "mpc prev"
+bindsym $mod+Right exec --no-startup-id "mpc next"
+bindsym $mod+Up exec --no-startup-id "mpc play"
+bindsym $mod+Down exec --no-startup-id "mpc pause"
 
 # move focused window
 bindsym $mod+Shift+h move left
@@ -119,6 +119,8 @@ bindsym $mod+minus scratchpad show
 # Volume Control
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -c 1 -q sset Master 2- unmute
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -c 1 -q sset Master 2+ unmute
+bindsym XF86MonBrightnessDown exec --no-startup-id adjust_brightness down
+bindsym XF86MonBrightnessUp exec --no-startup-id adjust_brightness up
 
 # reload the configuration file
 bindsym $mod+Control+c reload
@@ -144,5 +146,5 @@ new_window 1pixel
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+        status_command python3 $HOME/tools/lib/i3status/i3status.py
 }

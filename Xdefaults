@@ -24,7 +24,7 @@ URxvt*color11: #dadf45
 
 !Blue
 URxvt*color4:  #273a87
-URxvt*color12: #0066FF
+URxvt*color12: #00CCFF
 
 !Magenta
 URxvt*color5:  #666699
@@ -48,7 +48,7 @@ URxvt.perl-ext-common:  default,matcher,tabbedex
 !enabling clickable links:
 
 URxvt.urlLauncher:      /usr/bin/firefox
-URxvt.matcher.button:   1 
+URxvt.matcher.button:   1
 
 !urxvt scrolling options and cursor style:
 

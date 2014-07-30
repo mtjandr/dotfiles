@@ -1,0 +1,7 @@
+"loadplugins '\.(js|penta)$'
+"group user
+set hintkeys=sdfjklewcmpgh
+
+" Allow to select all with Ctrl-A in insert mode and normal mode
+map <C-a> <pass>
+imap <C-a> <pass>

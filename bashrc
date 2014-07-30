@@ -14,10 +14,8 @@ HISTFILESIZE=1000000
 HISTSIZE=1000000
 
 # Setup git auto-completion and PS1
-source $HOME/tools/lib/git/git-prompt.sh
-if [ -f $HOME/tools/lib/git/git-completion.bash ]; then
-    sh $HOME/tools/lib/git/git-completion.bash
-fi
+source /usr/share/git-core/contrib/completion/git-prompt.sh
+source /etc/bash_completion.d/git
 
 # Set up git helpers
 alias gits='git status'

@@ -79,6 +79,8 @@ bindsym $mod+Shift+space floating toggle
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
+bindsym --release $mod+Control+space exec --no-startup-id xdotool type --clearmodifiers "    "
+
 # focus the parent container
 bindsym $mod+a focus parent
 
@@ -128,6 +130,9 @@ bindsym $mod+Control+c reload
 # Lock
 bindsym $mod+Control+l exec slock
 
+#Screenshot
+bindsym $mod+F10 exec gnome-screenshot
+
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 
@@ -148,3 +153,6 @@ new_window 1pixel
 bar {
         status_command python3 $HOME/tools/lib/i3status/i3status.py
 }
+
+# Show the network manager icon on in the tray
+exec --no-startup-id nm-applet

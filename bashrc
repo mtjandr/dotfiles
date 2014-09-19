@@ -4,6 +4,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias background='feh --bg-scale'
 alias mplayerx='mplayer -heartbeat-cmd "xscreensaver-command -deactivate"'
+alias ppttopdf='libreoffice --headless --invisible --convert-to pdf *.ppt'
 
 # Allow auto-completion when using sudo or man
 complete -cf sudo

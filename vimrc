@@ -17,11 +17,15 @@ Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/syntastic'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 call vundle#end()
 
 " -[ Syntastic ]
 let g:syntastic_python_checkers=['python2.7']
+let g:syntastic_c_check_header = 1
+let g:syntastic_c_include_dirs = [ '/usr/src/kernels/3.15.10-200.fc20.x86_64/include' ]
 
 " -[ Color Settings ]
 syntax on               "Use pretty colours to distinguish syntax

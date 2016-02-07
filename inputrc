@@ -6,4 +6,3 @@ $include /etc/inputrc
 # Use smart autocompletion for ignoring case
 set completion-ignore-case on
 set completion-prefix-display-length 2
-

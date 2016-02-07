@@ -1,9 +1,7 @@
-! Swap caps lock with control
 remove Lock = Caps_Lock
 keysym Caps_Lock = Control_L
 add Control = Control_L
 
-!Swap alt with windows
 remove mod1 = Alt_L
 remove mod4 = Super_L
 add mod1 = Super_L

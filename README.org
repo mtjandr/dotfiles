@@ -1,0 +1,22 @@
+#+TITLE: Configuration Files
+These are my configuration files.
+If you would like to use them, first clone this repository.
+
+#+BEGIN_SRC bash
+cd $HOME
+git clone https://github.com/mtjandra/dotfiles.git
+#+END_SRC
+
+Then link the configuration you would like to use to the appropriate location.
+#+BEGIN_EXAMPLE
+ln $HOME/dotfiles/bashrc $HOME/.bashrc
+ln $HOME/dotfiles/i3/config $HOME/i3/config
+...
+#+END_EXAMPLE
+
+* Emacs
+  I am using [[https://github.com/syl20bnr/spacemacs][spacemacs]] as a base.
+  Run the following to get setup.
+  #+BEGIN_SRC bash
+  emacs --batch -l $HOME/dotfiles/.spacemacs.d/init.el
+  #+END_SRC

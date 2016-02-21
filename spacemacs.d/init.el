@@ -265,7 +265,22 @@ values."
 
   ;; Allow executiong of python and R in org-mode
   (org-babel-do-load-languages
-   'org-babel-load-languages '((python . t) (R . t))))
+   'org-babel-load-languages '((python . t) (R . t)))
+
+  ;; Have indents in place during org mode editing
+  (setq org-startup-indented t)
+
+  ;; Make RET do C-j during org mode
+  (add-hook 'org-mode-hook '(lambda ()
+    (local-set-key (kbd "RET") 'newline-and-indent)))
+
+  ;; Enable copy
+  (setq x-select-enable-clipboard t)
+  (setq interprogram-paste-function 'x-cut-buffer-or-selection-value)
+
+  ;; Do not ask for confirmation to run code snippets
+  (setq org-confirm-babel-evaluate nil)
+  )
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
